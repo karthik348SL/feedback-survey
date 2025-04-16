@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback-Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="title">Feedback Survey</h1>
+<p id="description">We appriciate your time and feedback</p>
+<form id="survey-form" action="#">
+  <fieldset>
+    <label for id="name-label">Name: <input type="text" id="name" name="username" class="inline" placeholder="Enter your Full Name" required></label>
+    <label for id="email-label">Email: <input type="email" id="email" name="useremail" class="inline" placeholder="Enter your Email" required></label>
+    <label for id="number-label">Age(optional): <input type="number" id="number"class="inline" min="18" max="54" name="userage" placeholder="Enter your Age" ></label>
+  </fieldset>
+  <fieldset>
+    <legend>Which option best describes you? :</legend>
+  <select id="dropdown" name="describe">
+    <option value="">choose one of them:</option>
+    <option value="1">Student</option>
+    <option value="2">Working Professionals</option>
+  </select>
+  </fieldset>
+  <fieldset>
+  <legend>Would you recommend us:</legend>
+  <label for="yes"><input type="radio" name="yes-no" value="yes" class="inline" id="yse" required>Yes
+  </label><br>
+  <label for="no"><input type="radio" name="yes-no" value="no" id="no" class="inline" required>No
+  </label>
+  </fieldset>
+  <fieldset>
+    <legend>What would you like to see improved? :</legend>
+  <label for="design"> <input type="checkbox" name="design-content" id="design" value="design" >Design</label><br>
+  <label for="content"> <input type="checkbox" name="design-content" id="content" value="content" >Content</label>
+  </fieldset>
+  <fieldset>
+    <legend>comments</legend>
+  <label for="comments"><textarea id="comments" name="comments">comments can be written</textarea></label>
+  </fieldset>
+  <input type="submit" id="submit">
+</form>
+</body>
+</html>
